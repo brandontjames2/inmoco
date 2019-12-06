@@ -1,3 +1,17 @@
-.container {
-    background: rgba(50, 70, 90, .5);
+.header {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.header div {
+    display: flex;
+    vertical-align: middle;
+}
+
+.header__logo-link {
+    height: 2.5rem;
+}
+
+.header__title {
+    margin: 0 auto;
 }
