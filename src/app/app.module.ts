@@ -10,6 +10,10 @@ import { ShopComponent } from './shop/shop.component';
 import { SideNavComponent } from './sidenav/sidenav.component';
 import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {  MatTreeModule, 
+          MatButtonModule,
+          MatDividerModule 
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -24,8 +28,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
-
+    BrowserAnimationsModule,
+    MatTreeModule,
+    MatButtonModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

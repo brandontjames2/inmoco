@@ -6,6 +6,7 @@
 .header div {
     display: flex;
     vertical-align: middle;
+    width: 18rem;
 }
 
 .header__logo-link {
