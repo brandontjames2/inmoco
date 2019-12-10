@@ -3,16 +3,33 @@
     margin-top: 1rem;
 }
 
-.header div {
+.header a {
+    text-decoration: none;
+}
+
+.header__link {
     display: flex;
-    vertical-align: middle;
-    width: 18rem;
+    align-items: center;
+    justify-content: flex-end;
+    height: 7rem;
+    width: 16rem;
+    background: url(../../assets/img/logo2.jpeg) center/cover;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
-.header__logo-link {
-    height: 2.5rem;
+.header__link:hover {
+    background: url(../../assets/img/logo2hover.jpeg) center/cover;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
-.header__title {
-    margin: 0 auto;
+.header__link--title {
+    color: black;
+}
+
+.header a:hover .header__link--title  {
+    color: #4b0082;
 }
