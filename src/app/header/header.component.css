@@ -1,6 +1,8 @@
 .header {
     display: flex;
     margin-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header a {
@@ -32,4 +34,30 @@
 
 .header a:hover .header__link--title  {
     color: #4b0082;
+}
+
+.header nav {
+    align-items: center;
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+}
+
+mat-icon {
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: bottom;
+}
+
+.shop-grid__item--image img {
+    width: 100%;
+}
+
+.shop-grid__item {
+    justify-content: center;
+}
+
+h2 {
+    font-size: 1rem;
 }
