@@ -3,7 +3,7 @@
 html, body { height: 100%; }
 * { 
     margin: 0; 
-    font-family: "typewriter", Roboto, "Helvetica Neue", sans-serif;
+    font-family: "typewriter", "Helvetica Neue", sans-serif;
     letter-spacing: 0.1rem;
     box-sizing: border-box;
 }
@@ -11,7 +11,6 @@ html, body { height: 100%; }
 
 .ind {
     color: #4b0082;
-    background-color: white;
 }
 
 .invisible {
