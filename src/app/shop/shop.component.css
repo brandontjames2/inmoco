@@ -1,0 +1,15 @@
+.shop-grid {
+    display: grid;
+  
+    grid-template-areas:
+      "item item item";
+  
+    grid-template-columns: 33% 33% 33%;
+    grid-auto-rows: auto;
+    grid-column-gap: .5rem;
+    grid-row-gap: 2rem;
+}
+
+.shop-grid__item--image img {
+    width: 100%;
+}
