@@ -1,7 +1,7 @@
-import { Component, OnInit, OnDestroy, ViewChild } from '@angular/core';
-import { ShopItem } from '../shop/shop.model';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ShopItem } from '../shop-item/shop.model';
 
-@Component({
+@Component({ 
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
