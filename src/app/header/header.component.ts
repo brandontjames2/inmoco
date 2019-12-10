@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ShopItem } from '../shop-item/shop.model';
+import { ShopItem } from '../shop/shop.model';
 
 @Component({ 
   selector: 'app-header',
