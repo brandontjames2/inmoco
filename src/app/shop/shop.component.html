@@ -1,9 +1,11 @@
 <div class="shop-grid">
-    <div class="shop-grid__item" *ngFor="let shopItem of shopItems">
-        <div class="shop-grid__item--image">
-            <img [src]=shopItem.imagePath>
-        </div>
-        <p class="shop-grid__item--title"> {{shopItem.title}} </p>
-        <p class="shop-grid__item--price"> ${{shopItem.price}} </p>
+  <div class="shop-grid__item" *ngFor="let shopItem of shopItems">
+    <div class="shop-grid__item--image">
+      <a routerLink="/">
+        <img [src]="shopItem.imagePath" />
+      </a>
     </div>
+    <p class="shop-grid__item--title">{{ shopItem.title }}</p>
+    <p class="shop-grid__item--price">${{ shopItem.price }}</p>
+  </div>
 </div>

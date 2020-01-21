@@ -1,34 +1,52 @@
 .container {
-    display: grid;
-  
+  display: grid;
+
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-column-gap: 1rem;
+  grid-row-gap: 2rem;
+
+  height: 100vh;
+}
+
+app-header {
+  grid-area: header;
+  grid-column: span 2;
+}
+
+app-sidenav {
+  display: none;
+  grid-area: nav;
+  margin-left: 0.5rem;
+}
+
+main {
+  grid-area: content;
+}
+
+app-footer {
+  grid-area: footer;
+  grid-column: span 2;
+}
+
+@media (min-width: 40rem) {
+  .container {
     grid-template-areas:
       "header header"
       "nav content"
       "footer footer";
-  
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: auto 1fr auto;
-    grid-column-gap: 1rem;
-    grid-row-gap: 2rem;
-  
-    height: 100vh;
-}
 
-app-header {
-    grid-area: header;
-    grid-column: span 2;
-}
-  
-app-sidenav {
+    grid-template-columns: 200px 1fr;
+  }
+
+  app-sidenav {
+    display: block;
     grid-area: nav;
     margin-left: 0.5rem;
-}
-  
-main {
-    grid-area: content;
-}
-  
-app-footer {
-    grid-area: footer;
-    grid-column: span 2;
+  }
 }

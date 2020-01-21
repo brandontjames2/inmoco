@@ -2,13 +2,17 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 html, body { height: 100%; }
-* { 
-    margin: 0; 
+* {
+    margin: 0;
     font-family: "typewriter", "Helvetica Neue", sans-serif;
     letter-spacing: 0.1rem;
     box-sizing: border-box;
 }
 
+.typewriter {
+  font-family: "typewriter" !important;
+  letter-spacing: 0.07rem !important;
+}
 
 .ind {
     color: #4b0082;

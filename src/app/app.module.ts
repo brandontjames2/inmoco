@@ -1,31 +1,35 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module';
-
-import {  MatTreeModule, 
+import { NgModule } from "@angular/core";
+import {
   MatButtonModule,
   MatDividerModule,
+  MatIconModule,
   MatMenuModule,
-  MatIconModule 
-} from '@angular/material';
-import { AppComponent } from './app.component';
-import { LandingComponent } from './landing/landing.component';
-import { ContactComponent } from './contact/contact.component';
-import { FooterComponent } from './footer/footer.component';
-import { ShopComponent } from './shop/shop.component';
-import { SideNavComponent } from './sidenav/sidenav.component';
-import { HeaderComponent } from './header/header.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+  MatTreeModule
+} from "@angular/material";
+import { BrowserModule } from "@angular/platform-browser";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { CartComponent } from "./cart/cart.component";
+import { LandingComponent } from "./landing/landing.component";
+import { MissionComponent } from "./mission/mission.component";
+import { FooterComponent } from "./shared/footer/footer.component";
+import { HeaderComponent } from "./shared/header/header.component";
+import { SideNavComponent } from "./shared/sidenav/sidenav.component";
+import { ShopItemComponent } from "./shop-item/shop-item.component";
+import { ShopComponent } from "./shop/shop.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ContactComponent,
     FooterComponent,
     LandingComponent,
     ShopComponent,
-    SideNavComponent
+    SideNavComponent,
+    ShopItemComponent,
+    MissionComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
@@ -40,4 +44,4 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

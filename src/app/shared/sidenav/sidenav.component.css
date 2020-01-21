@@ -3,8 +3,11 @@
   list-style-type: none;
 }
 
-
-
 .sidenav {
   height: 100%;
+}
+
+a,
+button {
+  font-size: 1rem;
 }
