@@ -1,4 +1,5 @@
 import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 import {
   MatButtonModule,
   MatDividerModule,
@@ -18,6 +19,7 @@ import { HeaderComponent } from "./shared/header/header.component";
 import { SideNavComponent } from "./shared/sidenav/sidenav.component";
 import { ShopItemComponent } from "./shop-item/shop-item.component";
 import { ShopComponent } from "./shop/shop.component";
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { ShopComponent } from "./shop/shop.component";
     SideNavComponent,
     ShopItemComponent,
     MissionComponent,
-    CartComponent
+    CartComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { ShopComponent } from "./shop/shop.component";
     MatButtonModule,
     MatDividerModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

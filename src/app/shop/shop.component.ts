@@ -14,42 +14,50 @@ export class ShopComponent implements OnInit, OnDestroy {
       {
         title: "shoe",
         price: 99,
-        imagePath: "../../assets/img/logo2.jpeg"
+        imagePath: "../../assets/img/logo2.jpeg",
+        quantity: 3
       },
       {
         title: "shoe",
         price: 99,
-        imagePath: "../../assets/img/logo2.jpeg"
+        imagePath: "../../assets/img/logo2.jpeg",
+        quantity: 3
       },
       {
         title: "shoe",
         price: 99,
-        imagePath: "../../assets/img/logo2.jpeg"
+        imagePath: "../../assets/img/logo2.jpeg",
+        quantity: 3
       },
       {
         title: "shoe",
         price: 99,
-        imagePath: "../../assets/img/logo2.jpeg"
+        imagePath: "../../assets/img/logo2.jpeg",
+        quantity: 3
       },
       {
         title: "shoe",
         price: 99,
-        imagePath: "../../assets/img/logo2.jpeg"
+        imagePath: "../../assets/img/logo2.jpeg",
+        quantity: 3
       },
       {
         title: "shoe",
         price: 99,
-        imagePath: "../../assets/img/logo2.jpeg"
+        imagePath: "../../assets/img/logo2.jpeg",
+        quantity: 3
       },
       {
         title: "shoe",
         price: 99,
-        imagePath: "../../assets/img/logo2.jpeg"
+        imagePath: "../../assets/img/logo2.jpeg",
+        quantity: 3
       },
       {
         title: "shoe",
         price: 99,
-        imagePath: "../../assets/img/logo2.jpeg"
+        imagePath: "../../assets/img/logo2.jpeg",
+        quantity: 3
       }
     ];
   }
