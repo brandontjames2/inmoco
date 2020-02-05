@@ -1,27 +1,21 @@
 <div class="container">
-  <div
-    *ngFor="let shopItem of shopItems; let lastItem = last"
-    class="shop-item--container"
-  >
+  <div *ngFor="let shopItem of shopItems; let lastItem = last" class="shop-item--container">
     <div class="shop-item">
-      <img
-        routerLink="/shop-item"
-        class="shop-item__image"
-        src="assets/img/logo2.jpeg"
-      />
+      <img routerLink="/shop-item" class="shop-item__image" src="assets/img/logo2.jpeg" />
       <div class="shop-item__description">
         <div class="row-1">
           <h3>{{ shopItem.title }}</h3>
-          <p>${{ shopItem.price }}</p>
         </div>
         <div class="row-2">
-          <input type="number" [(ngModel)]="shopItem.quantity" />
+          <input type="number" [(ngModel)]="shopItem.quantity" (input)="updateTotal(shopItem)" />
+          <p>x ${{ shopItem.price }}</p>
         </div>
       </div>
     </div>
     <hr />
   </div>
+  <h3 class="total" [innerText]="'Total: $' + total"></h3>
   <div class="checkout-container">
-    <button mat-raised-button disableRipple>CHECKOUT</button>
+    <button routerLink="/checkout" mat-raised-button disableRipple>CHECKOUT</button>
   </div>
 </div>

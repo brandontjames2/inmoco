@@ -1,1 +1,26 @@
-<p>checkout works!</p>
+<div class="container">
+    <h3>Contact</h3>
+    <div class="contact">
+        <div class="form-group">
+            <mat-form-field>
+                <input matInput type="text" placeholder="First Name">
+            </mat-form-field>
+            <span></span>
+            <mat-form-field>
+                <input matInput type="text" placeholder="Last Name">
+            </mat-form-field>
+        </div>
+    </div>
+    <h3>Billing</h3>
+    <div class="billing">
+        <div class="form-group">
+            <mat-form-field id="card-number">
+                <input matInput type="text" placeholder="Card Number">
+            </mat-form-field>
+        </div>
+    </div>
+    <h3 class="total" [innerText]="'Total: $' + total"></h3>
+    <div class="confirm-container">
+        <button routerLink="" mat-raised-button disableRipple>CONFIRM ORDER</button>
+    </div>
+</div>
